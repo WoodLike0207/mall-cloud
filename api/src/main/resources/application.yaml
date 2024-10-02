@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://8.140.225.7:3306/mall?characterEncoding=utf-8
+      username: root
+      password: admin123
+  redis:
+    port: 7001
+    host: 8.140.225.7
+    database: 0
+    password: wood1234
+  elasticsearch:
+    rest:
+      uris: http://8.140.225.7:9200
+
+
+mybatis:
+  mapper-locations: classpath:mappers/*Mapper.xml
+  type-aliases-package: com.lb.mall.entity
+
+redisson:
+  addr:
+    singleAddr:
+      host: redis://8.140.225.7:7001
+      password: wood1234
+      database: 0
