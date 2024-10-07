@@ -19,6 +19,9 @@
     <module>mapper</module>
     <module>service</module>
     <module>api</module>
+
+    <module>api-user-login</module>
+    <module>user-check</module>
   </modules>
   <version>2.0.1</version>
 

@@ -1,7 +1,7 @@
 package com.lb.mall.dao;
 
-import com.lb.mall.entity.Category;
-import com.lb.mall.entity.CategoryVO;
+import com.lb.mall.beans.Category;
+import com.lb.mall.beans.CategoryVO;
 import com.lb.mall.general.GeneralDAO;
 import org.springframework.stereotype.Repository;
 

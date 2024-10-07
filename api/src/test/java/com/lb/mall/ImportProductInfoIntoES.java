@@ -1,11 +1,10 @@
 package com.lb.mall;
 
 import com.alibaba.fastjson.JSON;
-import com.lb.ApiApplication;
 import com.lb.mall.dao.ProductMapper;
-import com.lb.mall.entity.Product4ES;
-import com.lb.mall.entity.ProductSku;
-import com.lb.mall.entity.ProductVO;
+import com.lb.mall.beans.Product4ES;
+import com.lb.mall.beans.ProductSku;
+import com.lb.mall.beans.ProductVO;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.RequestOptions;
@@ -14,10 +13,7 @@ import org.elasticsearch.client.indices.CreateIndexRequest;
 import org.elasticsearch.client.indices.CreateIndexResponse;
 import org.elasticsearch.common.xcontent.XContentType;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
 import java.util.List;

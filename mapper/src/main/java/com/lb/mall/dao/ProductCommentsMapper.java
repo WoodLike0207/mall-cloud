@@ -1,7 +1,7 @@
 package com.lb.mall.dao;
 
-import com.lb.mall.entity.ProductComments;
-import com.lb.mall.entity.ProductCommentsVO;
+import com.lb.mall.beans.ProductComments;
+import com.lb.mall.beans.ProductCommentsVO;
 import com.lb.mall.general.GeneralDAO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

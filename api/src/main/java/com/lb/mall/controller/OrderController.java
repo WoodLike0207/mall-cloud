@@ -2,9 +2,8 @@ package com.lb.mall.controller;
 
 import com.github.wxpay.sdk.WXPay;
 import com.lb.mall.config.MyPayConfig;
-import com.lb.mall.entity.Orders;
+import com.lb.mall.beans.Orders;
 import com.lb.mall.service.OrderService;
-import com.lb.mall.service.impl.OrderServiceImpl;
 import com.lb.mall.vo.RespStatus;
 import com.lb.mall.vo.ResultVo;
 import io.swagger.annotations.Api;

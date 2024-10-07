@@ -1,8 +1,7 @@
 package com.lb.mall.controller;
 
-import com.lb.mall.entity.Users;
+import com.lb.mall.beans.Users;
 import com.lb.mall.service.UserService;
-import com.lb.mall.vo.BasicResultVO;
 import com.lb.mall.vo.RespStatus;
 import com.lb.mall.vo.ResultVo;
 import io.swagger.annotations.Api;

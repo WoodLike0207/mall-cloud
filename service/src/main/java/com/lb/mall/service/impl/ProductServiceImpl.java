@@ -1,14 +1,13 @@
 package com.lb.mall.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lb.mall.dao.ProductImgMapper;
 import com.lb.mall.dao.ProductMapper;
 import com.lb.mall.dao.ProductParamsMapper;
 import com.lb.mall.dao.ProductSkuMapper;
-import com.lb.mall.entity.*;
+import com.lb.mall.beans.*;
 import com.lb.mall.service.ProductService;
 import com.lb.mall.utils.PageHelper;
 import com.lb.mall.vo.RespStatus;
@@ -17,7 +16,6 @@ import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;

@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lb.mall.dao.CategoryMapper;
-import com.lb.mall.entity.CategoryVO;
+import com.lb.mall.beans.CategoryVO;
 import com.lb.mall.service.CategoryService;
 import com.lb.mall.vo.RespStatus;
 import com.lb.mall.vo.ResultVo;
