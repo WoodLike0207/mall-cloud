@@ -9,7 +9,15 @@
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/api-user-login/pom.xml" />
         <option value="$PROJECT_DIR$/user-check/pom.xml" />
+        <option value="$PROJECT_DIR$/api-user-login/api-user-regist/pom.xml" />
+        <option value="$PROJECT_DIR$/api-user-regist/pom.xml" />
+        <option value="$PROJECT_DIR$/user-save/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/api-user-login/api-user-regist/pom.xml" />
+      </set>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>

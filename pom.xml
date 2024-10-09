@@ -22,6 +22,7 @@
 
     <module>api-user-login</module>
     <module>user-check</module>
+    <module>user-save</module>
   </modules>
   <version>2.0.1</version>
 
