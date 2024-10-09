@@ -12,6 +12,12 @@
         <option value="$PROJECT_DIR$/api-user-login/api-user-regist/pom.xml" />
         <option value="$PROJECT_DIR$/api-user-regist/pom.xml" />
         <option value="$PROJECT_DIR$/user-save/pom.xml" />
+        <option value="$PROJECT_DIR$/stock-query/pom.xml" />
+        <option value="$PROJECT_DIR$/orderitem-add/pom.xml" />
+        <option value="$PROJECT_DIR$/stock-update/pom.xml" />
+        <option value="$PROJECT_DIR$/shopcart-del/pom.xml" />
+        <option value="$PROJECT_DIR$/api-order-submit/pom.xml" />
+        <option value="$PROJECT_DIR$/order-add/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
