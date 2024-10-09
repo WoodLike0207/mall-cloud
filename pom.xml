@@ -21,6 +21,7 @@
     <module>api</module>
 
     <module>api-user-login</module>
+    <module>api-user-regist</module>
     <module>user-check</module>
     <module>user-save</module>
   </modules>
