@@ -7,7 +7,7 @@ import com.lb.mall.dao.ProductImgMapper;
 import com.lb.mall.dao.ProductMapper;
 import com.lb.mall.dao.ProductParamsMapper;
 import com.lb.mall.dao.ProductSkuMapper;
-import com.lb.mall.beans.*;
+import com.lb.mall.entity.*;
 import com.lb.mall.service.ProductService;
 import com.lb.mall.utils.PageHelper;
 import com.lb.mall.vo.RespStatus;

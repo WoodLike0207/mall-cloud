@@ -5,7 +5,7 @@ import com.lb.mall.dao.CategoryMapper;
 import com.lb.mall.dao.ProductCommentsMapper;
 import com.lb.mall.dao.ProductMapper;
 import com.lb.mall.dao.ShoppingCartMapper;
-import com.lb.mall.beans.*;
+import com.lb.mall.entity.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

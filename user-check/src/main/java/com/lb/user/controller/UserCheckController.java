@@ -1,6 +1,6 @@
 package com.lb.user.controller;
 
-import com.lb.mall.beans.Users;
+import com.lb.mall.entity.Users;
 import com.lb.user.service.UserCheckService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

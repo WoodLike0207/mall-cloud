@@ -1,6 +1,6 @@
 package com.lb.user.service;
 
-import com.lb.mall.beans.Users;
+import com.lb.mall.entity.Users;
 
 public interface UserCheckService {
 

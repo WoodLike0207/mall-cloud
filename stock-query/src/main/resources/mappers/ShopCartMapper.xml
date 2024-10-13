@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lb.stock.dao.ShopCartMapper">
-  <resultMap id="ShoppingCartVOMap2" type="com.lb.mall.beans.ShoppingCartVO">
+  <resultMap id="ShoppingCartVOMap2" type="com.lb.mall.entity.ShoppingCartVO">
       <id column="cart_id" jdbcType="INTEGER" property="cartId" />
       <result column="product_id" jdbcType="VARCHAR" property="productId" />
       <result column="sku_id" jdbcType="VARCHAR" property="skuId" />

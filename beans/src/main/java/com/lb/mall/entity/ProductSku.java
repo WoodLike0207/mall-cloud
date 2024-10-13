@@ -1,4 +1,4 @@
-package com.lb.mall.beans;
+package com.lb.mall.entity;
 
 import java.math.BigDecimal;
 import java.util.Date;

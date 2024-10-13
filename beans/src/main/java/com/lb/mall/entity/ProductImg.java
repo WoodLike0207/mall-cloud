@@ -1,4 +1,4 @@
-package com.lb.mall.beans;
+package com.lb.mall.entity;
 
 import java.util.Date;
 import javax.persistence.*;

@@ -1,7 +1,7 @@
 package com.lb.mall.dao;
 
-import com.lb.mall.beans.Product;
-import com.lb.mall.beans.ProductVO;
+import com.lb.mall.entity.Product;
+import com.lb.mall.entity.ProductVO;
 import com.lb.mall.general.GeneralDAO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

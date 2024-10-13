@@ -1,7 +1,7 @@
 package com.lb.mall.service.impl;
 
 import com.lb.mall.dao.UserAddrMapper;
-import com.lb.mall.beans.UserAddr;
+import com.lb.mall.entity.UserAddr;
 import com.lb.mall.service.UserAddrService;
 import com.lb.mall.vo.RespStatus;
 import com.lb.mall.vo.ResultVo;

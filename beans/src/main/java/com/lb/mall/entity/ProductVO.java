@@ -1,4 +1,4 @@
-package com.lb.mall.beans;
+package com.lb.mall.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

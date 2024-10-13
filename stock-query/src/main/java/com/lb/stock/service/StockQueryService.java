@@ -1,6 +1,6 @@
 package com.lb.stock.service;
 
-import com.lb.mall.beans.ShoppingCartVO;
+import com.lb.mall.entity.ShoppingCartVO;
 
 import java.util.List;
 

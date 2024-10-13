@@ -25,7 +25,7 @@
         <property name="nullCatalogMeansCurrent" value="true"/>
 
         <!-- 配置实体类存放路径 -->
-        <javaModelGenerator targetPackage="com.lb.mall.beans" targetProject="src/main/java"/>
+        <javaModelGenerator targetPackage="com.lb.mall.entity" targetProject="src/main/java"/>
 
         <!-- 配置 XML 存放路径 -->
         <sqlMapGenerator targetPackage="/" targetProject="src/main/resources/mappers"/>

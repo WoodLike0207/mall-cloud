@@ -2,9 +2,9 @@ package com.lb.mall;
 
 import com.alibaba.fastjson.JSON;
 import com.lb.mall.dao.ProductMapper;
-import com.lb.mall.beans.Product4ES;
-import com.lb.mall.beans.ProductSku;
-import com.lb.mall.beans.ProductVO;
+import com.lb.mall.entity.Product4ES;
+import com.lb.mall.entity.ProductSku;
+import com.lb.mall.entity.ProductVO;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.RequestOptions;

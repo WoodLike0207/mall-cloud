@@ -2,7 +2,7 @@ package com.lb.mall.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lb.mall.beans.ShoppingCart;
+import com.lb.mall.entity.ShoppingCart;
 import com.lb.mall.service.ShoppingCartService;
 import com.lb.mall.vo.ResultVo;
 import io.swagger.annotations.Api;

@@ -8,7 +8,6 @@ import com.lb.mall.utils.MD5Utils;
 import com.lb.mall.vo.RespStatus;
 import com.lb.mall.vo.ResultVo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;

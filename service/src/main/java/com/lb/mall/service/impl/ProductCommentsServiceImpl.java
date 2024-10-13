@@ -1,8 +1,8 @@
 package com.lb.mall.service.impl;
 
 import com.lb.mall.dao.ProductCommentsMapper;
-import com.lb.mall.beans.ProductComments;
-import com.lb.mall.beans.ProductCommentsVO;
+import com.lb.mall.entity.ProductComments;
+import com.lb.mall.entity.ProductCommentsVO;
 import com.lb.mall.service.ProductCommentsService;
 import com.lb.mall.utils.PageHelper;
 import com.lb.mall.vo.RespStatus;

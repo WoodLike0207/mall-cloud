@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lb.mall.dao.ShoppingCartMapper">
-  <resultMap id="BaseResultMap" type="com.lb.mall.beans.ShoppingCart">
+  <resultMap id="BaseResultMap" type="com.lb.mall.entity.ShoppingCart">
     <!--
       WARNING - @mbg.generated
     -->
@@ -15,7 +15,7 @@
     <result column="sku_props" jdbcType="VARCHAR" property="skuProps" />
   </resultMap>
 
-  <resultMap id="ShoppingCartVOMap" type="com.lb.mall.beans.ShoppingCartVO">
+  <resultMap id="ShoppingCartVOMap" type="com.lb.mall.entity.ShoppingCartVO">
     <id column="cart_id" jdbcType="INTEGER" property="cartId" />
     <result column="product_id" jdbcType="VARCHAR" property="productId" />
     <result column="sku_id" jdbcType="VARCHAR" property="skuId" />
@@ -60,7 +60,7 @@
   </update>
 
 
-  <resultMap id="ShoppingCartVOMap2" type="com.lb.mall.beans.ShoppingCartVO">
+  <resultMap id="ShoppingCartVOMap2" type="com.lb.mall.entity.ShoppingCartVO">
       <id column="cart_id" jdbcType="INTEGER" property="cartId" />
       <result column="product_id" jdbcType="VARCHAR" property="productId" />
       <result column="sku_id" jdbcType="VARCHAR" property="skuId" />

@@ -1,6 +1,6 @@
 package com.lb.stock.service.impl;
 
-import com.lb.mall.beans.ShoppingCartVO;
+import com.lb.mall.entity.ShoppingCartVO;
 import com.lb.stock.dao.ShopCartMapper;
 import com.lb.stock.service.StockQueryService;
 import org.springframework.beans.factory.annotation.Autowired;

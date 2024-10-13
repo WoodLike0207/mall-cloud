@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lb.mall.dao.ProductImgMapper">
-  <resultMap id="BaseResultMap" type="com.lb.mall.beans.ProductImg">
+  <resultMap id="BaseResultMap" type="com.lb.mall.entity.ProductImg">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="item_id" jdbcType="VARCHAR" property="itemId" />
     <result column="url" jdbcType="VARCHAR" property="url" />

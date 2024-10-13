@@ -1,6 +1,6 @@
 package com.lb.mall.dao;
 
-import com.lb.mall.beans.ProductParams;
+import com.lb.mall.entity.ProductParams;
 import com.lb.mall.general.GeneralDAO;
 import org.springframework.stereotype.Repository;
 

@@ -1,8 +1,8 @@
 package com.lb.mall.service.impl;
 
 import com.lb.mall.dao.ShoppingCartMapper;
-import com.lb.mall.beans.ShoppingCart;
-import com.lb.mall.beans.ShoppingCartVO;
+import com.lb.mall.entity.ShoppingCart;
+import com.lb.mall.entity.ShoppingCartVO;
 import com.lb.mall.service.ShoppingCartService;
 import com.lb.mall.vo.RespStatus;
 import com.lb.mall.vo.ResultVo;

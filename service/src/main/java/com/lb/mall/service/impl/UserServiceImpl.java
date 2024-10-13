@@ -3,7 +3,7 @@ package com.lb.mall.service.impl;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lb.mall.dao.UsersMapper;
-import com.lb.mall.beans.Users;
+import com.lb.mall.entity.Users;
 import com.lb.mall.service.UserService;
 import com.lb.mall.utils.MD5Utils;
 import com.lb.mall.vo.RespStatus;

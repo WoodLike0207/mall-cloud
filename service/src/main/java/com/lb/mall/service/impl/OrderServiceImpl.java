@@ -4,7 +4,7 @@ import com.lb.mall.dao.OrderItemMapper;
 import com.lb.mall.dao.OrdersMapper;
 import com.lb.mall.dao.ProductSkuMapper;
 import com.lb.mall.dao.ShoppingCartMapper;
-import com.lb.mall.beans.*;
+import com.lb.mall.entity.*;
 import com.lb.mall.service.OrderService;
 import com.lb.mall.utils.PageHelper;
 import com.lb.mall.vo.RespStatus;

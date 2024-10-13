@@ -1,6 +1,6 @@
 package com.lb.user.service.impl;
 
-import com.lb.mall.beans.Users;
+import com.lb.mall.entity.Users;
 import com.lb.user.dao.UserMapper;
 import com.lb.user.service.UserCheckService;
 import org.springframework.beans.factory.annotation.Autowired;

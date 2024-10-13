@@ -2,7 +2,7 @@ package com.lb.mall.service.job;
 
 import com.github.wxpay.sdk.WXPay;
 import com.lb.mall.dao.OrdersMapper;
-import com.lb.mall.beans.Orders;
+import com.lb.mall.entity.Orders;
 import com.lb.mall.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
