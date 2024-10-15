@@ -17,3 +17,11 @@ eureka:
 mybatis:
   mapper-locations: classpath:mappers/*Mapper.xml
   type-aliases-package: com.lb.mall.entity
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000 # 设置hystrix的超时时间为6000ms

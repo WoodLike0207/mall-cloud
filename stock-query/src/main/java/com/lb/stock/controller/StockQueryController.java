@@ -4,6 +4,7 @@ import com.lb.mall.entity.ShoppingCartVO;
 import com.lb.stock.service.StockQueryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -14,7 +15,7 @@ public class StockQueryController {
     private StockQueryService stockQueryService;
 
     @GetMapping("/stock/query")
-    public List<ShoppingCartVO> query(String cids){
+    public List<ShoppingCartVO> query(@RequestParam("cids") String cids){
         List<ShoppingCartVO> list = stockQueryService.selectShopcartByCids(cids);
         return list;
     }

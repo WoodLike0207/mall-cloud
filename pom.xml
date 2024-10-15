@@ -22,9 +22,12 @@
 
     <module>api-user-login</module>
     <module>api-user-regist</module>
+    <module>api-order-submit</module>
+
     <module>user-check</module>
     <module>user-save</module>
     <module>stock-query</module>
+    <module>order-add</module>
     <module>orderitem-add</module>
     <module>stock-update</module>
     <module>shopcart-del</module>
