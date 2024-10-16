@@ -25,6 +25,8 @@
     <file url="file://$PROJECT_DIR$/order-close/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-status-update/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-status-update/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-timeout-cancel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-timeout-cancel/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-timeout-cancle/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-timeout-cancle/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-timeout-query/src/main/java" charset="UTF-8" />

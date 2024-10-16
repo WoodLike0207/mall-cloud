@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/order-status-update/pom.xml" />
         <option value="$PROJECT_DIR$/order-close/pom.xml" />
         <option value="$PROJECT_DIR$/order-timeout-cancle/pom.xml" />
+        <option value="$PROJECT_DIR$/order-timeout-cancel/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
