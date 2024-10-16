@@ -34,6 +34,7 @@
     <module>order-timeout-query</module>
     <module>order-status-update</module>
     <module>order-close</module>
+    <module>order-timeout-cancel</module>
   </modules>
   <version>2.0.1</version>
 
