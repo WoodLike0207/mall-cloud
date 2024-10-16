@@ -18,11 +18,16 @@
         <option value="$PROJECT_DIR$/shopcart-del/pom.xml" />
         <option value="$PROJECT_DIR$/api-order-submit/pom.xml" />
         <option value="$PROJECT_DIR$/order-add/pom.xml" />
+        <option value="$PROJECT_DIR$/order-timeout-query/pom.xml" />
+        <option value="$PROJECT_DIR$/order-status-update/pom.xml" />
+        <option value="$PROJECT_DIR$/order-close/pom.xml" />
+        <option value="$PROJECT_DIR$/order-timeout-cancle/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/api-user-login/api-user-regist/pom.xml" />
+        <option value="$PROJECT_DIR$/order-timeout-cancle/pom.xml" />
       </set>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
