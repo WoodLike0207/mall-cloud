@@ -30,12 +30,17 @@ public class OrderAddServiceImpl implements OrderAddService {
             //b.判断库存
             boolean f = true;
             String untitled = "";
-            for (ShoppingCartVO sc : list) {
+            for (int i = 0; i < list.size(); i++) {
+                ShoppingCartVO sc = list.get(i);
                 if (Integer.parseInt(sc.getCartNum()) > sc.getSkuStock()) {
                     f = false;
                     break;
                 }
-                untitled = untitled + sc.getProductName() + ",";
+                if (i == list.size() - 1){
+                    untitled = untitled + sc.getProductName();
+                }else {
+                    untitled = untitled + sc.getProductName() + ",";
+                }
             }
             if(f){
                 //2.库存充足 保存订单信息
@@ -43,8 +48,8 @@ public class OrderAddServiceImpl implements OrderAddService {
                 order.setCreateTime(new Date());
                 order.setStatus("1");
                 //生成订单编号:分布式系统全局ID生成
-                String orderId = UUID.randomUUID().toString().replace("-", "");
-                order.setOrderId(orderId);
+                /*String orderId = UUID.randomUUID().toString().replace("-", "");
+                order.setOrderId(orderId);*/
                 int i = ordersMapper.insert(order);
                 if(i>0){
                     return list;
