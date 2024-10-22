@@ -25,12 +25,15 @@
         <option value="$PROJECT_DIR$/order-timeout-cancel/pom.xml" />
         <option value="$PROJECT_DIR$/orderitem-query/pom.xml" />
         <option value="$PROJECT_DIR$/product-sku-query/pom.xml" />
+        <option value="$PROJECT_DIR$/zipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/zipkin-server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/api-user-login/api-user-regist/pom.xml" />
         <option value="$PROJECT_DIR$/order-timeout-cancle/pom.xml" />
+        <option value="$PROJECT_DIR$/zipkin/pom.xml" />
       </set>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

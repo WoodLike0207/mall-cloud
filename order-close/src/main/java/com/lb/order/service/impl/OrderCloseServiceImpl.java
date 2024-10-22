@@ -31,6 +31,7 @@ public class OrderCloseServiceImpl implements OrderCloseService {
         order.setOrderId(orderId);
         order.setStatus("6");
         order.setCloseType(closeType);
+
         int i = orderStatusUpdateClient.update(order);
 
         if (i > 0){

@@ -13,7 +13,7 @@ public class OrderStatusUpdateServiceImpl implements OrderStatusUpdateService {
 
     @Override
     public int updateStatus(Orders order) {
-        int i = ordersMapper.updateByPrimaryKey(order);
+        int i = ordersMapper.updateByPrimaryKeySelective(order);
         return i;
     }
 }

@@ -1,0 +1,9 @@
+server:
+  port: 9411
+spring:
+  application:
+    name: zipkin
+management:
+  endpoints.web.exposure.include: '*'
+  metrics.web.server.auto-time-requests: false
+

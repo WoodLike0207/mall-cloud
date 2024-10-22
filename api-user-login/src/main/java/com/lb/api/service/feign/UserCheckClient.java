@@ -6,7 +6,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "user-check",fallback = UserCheckClientFallback.class)
+@FeignClient(value = "user-check",fallbackFactory = UserCheckClientFallback.class)
 public interface UserCheckClient {
     @GetMapping("user/check")
     Users check(@RequestParam("username") String username);
