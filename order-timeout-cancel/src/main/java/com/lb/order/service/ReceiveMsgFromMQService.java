@@ -4,33 +4,37 @@ import com.github.wxpay.sdk.WXPay;
 import com.lb.mall.beans.Orders;
 import com.lb.order.config.MyPayConfig;
 import com.lb.order.feign.OrderCloseClient;
+import com.lb.order.feign.OrderQueryByIdClient;
 import com.lb.order.feign.OrderStatusUpdateClient;
-import com.lb.order.feign.OrderTimeoutQueryClient;
+import com.rabbitmq.client.Channel;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.rabbit.annotation.RabbitHandler;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-@Component
-public class OrderTimeoutCancelJob {
-    @Autowired
-    private OrderTimeoutQueryClient orderTimeoutQueryClient;
+@Service
+@RabbitListener(queues = "q2")
+public class ReceiveMsgFromMQService {
     private WXPay wxPay = new WXPay(new MyPayConfig());
     @Autowired
     private OrderStatusUpdateClient orderStatusUpdateClient;
     @Autowired
     private OrderCloseClient orderCloseClient;
+    @Autowired
+    private OrderQueryByIdClient orderQueryByIdClient;
 
-    // @Scheduled(cron = "0/3 * * * * ?")
-    public void checkAndCancelOrder(){
+    @RabbitHandler
+    public void checkAndCancelOrder(String orderId, Channel channel, Message message) throws IOException {
         try {
-            List<Orders> orders = orderTimeoutQueryClient.query();
+            // 1.根据订单编号查询当前的订单信息
+            Orders order = orderQueryByIdClient.query(orderId);
 
-            for (int i = 0; i < orders.size(); i++) {
-                Orders order = orders.get(i);
+            if ("1".equals(order.getStatus())){
                 HashMap<String,String> params = new HashMap<>();
                 params.put("out_trade_no",order.getOrderId());
                 Map<String, String> resp = wxPay.orderQuery(params);
@@ -53,8 +57,11 @@ public class OrderTimeoutCancelJob {
                 }
             }
 
+            channel.basicAck(message.getMessageProperties().getDeliveryTag(),false);
+
         }catch (Exception e){
             e.printStackTrace();
+            channel.basicNack(message.getMessageProperties().getDeliveryTag(),false,true);
         }
     }
 }

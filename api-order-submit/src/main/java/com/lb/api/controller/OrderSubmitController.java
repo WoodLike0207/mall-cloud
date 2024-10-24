@@ -4,6 +4,7 @@ import com.github.wxpay.sdk.WXPay;
 import com.lb.api.config.MyPayConfig;
 import com.lb.api.service.OrderSubmitService;
 import com.lb.api.service.feign.OrderAddClient;
+import com.lb.api.service.impl.SendMsgToMQService;
 import com.lb.mall.beans.Orders;
 import com.lb.mall.vo.RespStatus;
 import com.lb.mall.vo.ResultVo;
@@ -23,6 +24,8 @@ public class OrderSubmitController {
     private OrderAddClient orderAddClient;
     @Autowired
     private OrderSubmitService orderSubmitService;
+    @Autowired
+    private SendMsgToMQService sendMsgToMQService;
 
     @PostMapping("/add")
     public ResultVo add(String cids, @RequestBody Orders order){
@@ -51,6 +54,9 @@ public class OrderSubmitController {
                 orderInfo.put("payUrl",resp.get("code_url"));
                 //orderInfo中包含：订单编号，购买的商品名称，支付链接
                 resultVO = new ResultVo(RespStatus.OK,"提交订单成功！",orderInfo);
+
+                // 当订单保存成功之后将订单编号写入到死信队列中 q1(ex6 - key1)
+                sendMsgToMQService.sendMsg(orderId);
 
             }else{
                 resultVO = new ResultVo(RespStatus.NO,"提交订单失败！",null);

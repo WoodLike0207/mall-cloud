@@ -23,6 +23,8 @@
     <file url="file://$PROJECT_DIR$/order-add/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-close/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-close/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-querybyid/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-querybyid/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-status-update/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-status-update/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-timeout-cancel/src/main/java" charset="UTF-8" />
