@@ -37,6 +37,7 @@
     <module>order-timeout-cancel</module>
     <module>orderitem-query</module>
     <module>product-sku-query</module>
+    <module>order-querybyid</module>
   </modules>
   <version>2.0.1</version>
 
