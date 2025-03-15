@@ -1,0 +1,31 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: gateway-server
+  main:
+    web-application-type: reactive  # 防止gateway报错
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin, RETAIN_UNIQUE
+      routes:
+        - id: api-user-login
+          uri: http://localhost:8001
+          predicates:
+            - Path=/user/login
+
+        - id: api-user-regist
+          uri: http://localhost:8002
+          predicates:
+            - Path=/user/regist
+
+        - id: api-order-submit
+          uri: http://localhost:8014
+          predicates:
+            - Path=/order/add
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zhangsan:123456@localhost:8761/eureka

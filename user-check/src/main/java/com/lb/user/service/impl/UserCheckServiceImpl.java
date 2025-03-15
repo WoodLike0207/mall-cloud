@@ -22,7 +22,7 @@ public class UserCheckServiceImpl implements UserCheckService {
         criteria.andEqualTo("username",name);
 
         List<Users> users = userMapper.selectByExample(example);
-        if (users.size() > 0){
+        if (!users.isEmpty()){
             return users.get(0);
         }else {
             return null;

@@ -3,6 +3,16 @@ server:
 spring:
   application:
     name: order-timeout-cancel
+  rabbitmq:
+    host: 8.140.225.7
+    virtual-host: host1
+    port: 5672
+    username: zhangsan
+    password: admin123
+    listener:
+      simple:
+        acknowledge-mode: manual
+
 eureka:
   client:
     service-url:
